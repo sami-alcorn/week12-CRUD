@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container mt-3">
+    <!--div for the for to create a new farm, has a header, input for the name, and create button-->
+    <div id="new-farm" class="card">
+        <h3>Build your dream farm!</h3>
+        <br>
+        <input id="new-farm-name" type="text"> <br>
+        <button id="create-new-farm" class="btn btn-primary" onclick="DOMManager.createFarm()">Create</button>
+    </div>
+    <!--Div to hold all the generated information, new farms will appear in this div-->
+    <div id="app">   
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="farms.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
